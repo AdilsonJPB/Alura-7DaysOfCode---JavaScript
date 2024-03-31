@@ -1,13 +1,8 @@
-const botaoAtivado = document.querySelector('#botao');
+const nomeValor = document.querySelector('#name');
+const dataValor = document.querySelector('#date');
 
-botaoAtivado.addEventListener('click', () => {
-    const nomeValor = document.querySelector('#name');
-    const dataValor = document.querySelector('#date');
-    const valorNome = nomeValor.value;
-    const valorData = dataValor.value;
-    nomeValor.addEventListener('input', () => exibirNoConsole(valorNome));
-    dataValor.addEventListener('input', () => exibirNoConsole(valorData));
-}); 
+nomeValor.addEventListener('input', () => exibirNoConsole(nomeValor.value));
+dataValor.addEventListener('input', () => exibirNoConsole(dataValor.value));
 
 function exibirNoConsole(valor) {
     console.log(valor);

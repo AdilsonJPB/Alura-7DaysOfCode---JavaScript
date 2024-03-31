@@ -12,7 +12,7 @@
         <form class="conteudo_principal__formulario">
 
             <label for="name">INSIRA SEU NOME</label>
-            <input class="formulario__name js-field" id="name" name="name" maxlength="120" ="nome..." ="text" required autocomplete="name"> 
+            <input class="formulario__name js-field" id="name" name="name" minlength="3" maxlength="120" type="text" required pattern="([aA-zZ]+)" required autocomplete="name"> 
 
             <label for="date">DATA DE NASCIMENTO</label>
             <input class="formulario__data js-field" id="date" name="date" type="date" required autocomplete="bday">
